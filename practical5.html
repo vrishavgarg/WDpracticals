@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    
+    <form action="mailto:gargvrishav@gmail.com"  method="post" enctype="text/plain">
+        <fieldset>
+        <legend>Enter your details</legend>
+        <label>Name: </label>
+        <input type="text" name="name "><br><br>
+        <label>Roll Number: </label>
+        <input type="text" name="roll number "><br><br>
+        <label>Branch: </label><br><br>
+        <input type="radio" name="branch " id="cse">
+        <label for="cse">CSE</label><br><br>
+        <input type="radio" name="branch " id="it">
+        <label for="it">IT</label><br><br>
+        <label>Date of Birth: </label>
+        <input type="datetime-local" name="Date of birth "><br><br>
+        <label>Date: </label>
+        <input type="date" name="Date "><br><br>
+        <label>Month: </label>
+        <input type="month" name="month "><br><br>
+        <label>Week: </label>
+        <input type="week" name="Week "><br><br>
+        <label>Email ID: </label>
+        <input type="email" name="email "><br><br>
+        <label>Password: </label>
+        <input type="password"><br><br>
+        <label>Phone Number: </label>
+        <input type="text" name="Phone number"><br><br>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />  
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate">
+            <option value="Coconut">
+            <option value="Mint">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist><br><br> 
+        <label>Your Preference: </label>
+        <select>
+        <optgroup label="Development">
+            <option>Web Development</option>
+            <option>Application Development</option>
+            <option>Machine Learning</option>
+        </optgroup>
+        <optgroup label="Coding">
+            <option>Compititive Programming</option>
+            <option>DSA</option>
+        </optgroup>
+        </select><br><br>
+        <label>Hobbies</label><br><br>
+        <input type="checkbox" id="movie" name="">
+        <label for="movie">Watching Movies</label><br><br>
+        <input type="checkbox" id="playing" name="">
+        <label for="playing">Playing Outdoor Games</label><br><br>
+        <input type="checkbox" id="online" name="">
+        <label for="online">Playing Online Games</label><br><br>
+        <label>Favourite Color</label>
+        <input type="color" name="Color"><br><br>
+        <input type="file" name="File" accept="pdf"><br><br>
+        <label>Message: </label><br>
+        <textarea name="Your Message " id="" cols="30" rows="10"></textarea><br><br>
+        <input type="submit">
+        <input type="reset"><br><br>
+    </fieldset>
+    </form>
+</body>
+</html>

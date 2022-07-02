@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online dice roller</title>
+    <style>
+        body{
+            background-color: #F6E3C5;
+        }
+        h1{
+            color: #4CACBC;
+            text-align: center;
+        }
+        p{
+            color: #6CC4A1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outcome of 30 rolls of dice:</h1>
+    <script>
+        document.write("<p>");
+        for(let i=1; i<=30; i++){
+            document.write("Outcome of Roll Number ",i," is: ",Math.floor(1+Math.random()*6));
+            document.write("<br>");
+        }
+        document.write("<\p>");
+    </script>
+</body>
+</html>
