@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 10px;
+            font-size: 20px;
+        }
+        #bg{
+            height: fit-content;
+            width: fit-content;
+            background-color: rgb(255, 201, 154);
+            display: inline-block;
+            border: 4px solid;
+            border-color: grey black black grey;
+        }
+        #a{
+            background-color: red;
+            color: white;
+            font-family: 'Mali', cursive;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .w{
+            width: 93%;
+        }
+        #b{
+            background-color: yellow;
+            width: 95%;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
-    
+    <center>
+    <form onsubmit="return f()" name="myform">
+        <div id="bg">
+            <div id="a">
+                Contact Us!
+            </div>
+            <div>
+                <input name="name" type="text" placeholder="Name......" class="w">
+            </div>
+            <div>
+                <input name="email" type="text" placeholder="Email......" class="w">
+            </div>
+            <div>
+                <input name="subject" type="text" placeholder="Subject......" class="w">
+            </div>
+            <div>
+                <textarea name="message" id="" cols="40" rows="4" placeholder="Message......"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="SEND MESSAGE" id="b">
+            </div>
+        </div>
+    </form>
+    </center>
+    <script>
+        function f(){
+            let a=document.forms["myform"]["name"].value;
+            let b=document.forms["myform"]["email"].value;
+            let c=document.forms["myform"]["subject"].value;
+            let d=document.forms["myform"]["message"].value;
+            if(a == ""){
+                alert("Name is not filled");
+                return false;
+            }else if(b == ""){
+                alert("Email is not filled");
+                return false;
+            }else if(c == ""){
+                alert("Subject is not filled");
+                return false;
+            }else if(d==""){
+                alert("Message is not filled");
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
